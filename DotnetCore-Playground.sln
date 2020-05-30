@@ -15,8 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpClient-Playground", "sr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpClient-Playground.Models.UnitTests", "src\HttpClient-Playground.Models.UnitTests\HttpClient-Playground.Models.UnitTests.csproj", "{565A14AE-F861-4533-A742-E764F8B04981}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "OOP\OOP.csproj", "{08F8AE4C-BCFF-4054-AC6B-3BEEF8F7C902}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,10 +41,6 @@ Global
 		{565A14AE-F861-4533-A742-E764F8B04981}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{565A14AE-F861-4533-A742-E764F8B04981}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{565A14AE-F861-4533-A742-E764F8B04981}.Release|Any CPU.Build.0 = Release|Any CPU
-		{08F8AE4C-BCFF-4054-AC6B-3BEEF8F7C902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08F8AE4C-BCFF-4054-AC6B-3BEEF8F7C902}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{08F8AE4C-BCFF-4054-AC6B-3BEEF8F7C902}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{08F8AE4C-BCFF-4054-AC6B-3BEEF8F7C902}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
