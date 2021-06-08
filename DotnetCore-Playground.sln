@@ -41,7 +41,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationTests.WithDocker
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationTests.Api", "src\IntegrationTests.Api\IntegrationTests.Api.csproj", "{1A81BA41-AEFA-4D94-9B8A-77918993BD4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleClassLibrary.UnitTests", "src\SampleClassLibrary.UnitTests\SampleClassLibrary.UnitTests.csproj", "{6A3699A5-BB48-4B2C-AF43-9BD2DBAEB2BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleClassLibrary.UnitTests", "src\SampleClassLibrary.UnitTests\SampleClassLibrary.UnitTests.csproj", "{6A3699A5-BB48-4B2C-AF43-9BD2DBAEB2BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ErrorHandling", "ErrorHandling", "{AE6BF696-BCDA-4012-9A83-E1F3CD468B87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostaSoftware.ErrorHandling.Web", "src\ErrorHandling\CostaSoftware.ErrorHandling.Web\CostaSoftware.ErrorHandling.Web.csproj", "{FF3030A2-A3A5-4C9B-BE75-9F9F4857A135}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +109,10 @@ Global
 		{6A3699A5-BB48-4B2C-AF43-9BD2DBAEB2BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A3699A5-BB48-4B2C-AF43-9BD2DBAEB2BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A3699A5-BB48-4B2C-AF43-9BD2DBAEB2BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF3030A2-A3A5-4C9B-BE75-9F9F4857A135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF3030A2-A3A5-4C9B-BE75-9F9F4857A135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF3030A2-A3A5-4C9B-BE75-9F9F4857A135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF3030A2-A3A5-4C9B-BE75-9F9F4857A135}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -123,6 +131,7 @@ Global
 		{E13F3617-8B9F-41E3-8A37-F1B9C5F4F607} = {676030B9-E009-43FD-A4D0-23FABD0BCCDD}
 		{1A81BA41-AEFA-4D94-9B8A-77918993BD4B} = {676030B9-E009-43FD-A4D0-23FABD0BCCDD}
 		{6A3699A5-BB48-4B2C-AF43-9BD2DBAEB2BE} = {75F027DE-81A4-4788-8436-055C0CE29CCB}
+		{FF3030A2-A3A5-4C9B-BE75-9F9F4857A135} = {AE6BF696-BCDA-4012-9A83-E1F3CD468B87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {377EBFFA-7790-405D-80F2-C60FED4475F9}
