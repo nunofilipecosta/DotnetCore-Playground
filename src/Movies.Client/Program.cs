@@ -1,7 +1,9 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+
 using Movies.Client.Services;
+
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -9,13 +11,13 @@ using System.Threading.Tasks;
 namespace Movies.Client
 {
     class Program
-    { 
+    {
         static async Task Main(string[] args)
         {
 
-            using IHost host = CreateHostBuilder(args).Build();         
-            var serviceProvider = host.Services; 
-            
+            using IHost host = CreateHostBuilder(args).Build();
+            var serviceProvider = host.Services;
+
             // For demo purposes: overall catch-all to log any exception that might 
             // happen to the console & wait for key input afterwards so we can easily 
             // inspect the issue.  
@@ -33,10 +35,10 @@ namespace Movies.Client
             {
                 // log the exception
                 var logger = serviceProvider.GetService<ILogger<Program>>();
-                logger.LogError(generalException, 
+                logger.LogError(generalException,
                     "An exception happened while running the integration service.");
             }
-            
+
             Console.ReadKey();
 
             await host.RunAsync();
@@ -45,7 +47,7 @@ namespace Movies.Client
         private static IHostBuilder CreateHostBuilder(string[] args)
         {
             return Host.CreateDefaultBuilder(args).ConfigureServices(
-                (serviceCollection) => ConfigureServices(serviceCollection)); 
+                (serviceCollection) => ConfigureServices(serviceCollection));
         }
 
         private static void ConfigureServices(IServiceCollection serviceCollection)
@@ -63,10 +65,10 @@ namespace Movies.Client
             //serviceCollection.AddScoped<IIntegrationService, PartialUpdateService>();
 
             // For the stream demos
-            serviceCollection.AddScoped<IIntegrationService, StreamService>();
+            //serviceCollection.AddScoped<IIntegrationService, StreamService>();
 
             // For the cancellation demos
-            // serviceCollection.AddScoped<IIntegrationService, CancellationService>();
+            serviceCollection.AddScoped<IIntegrationService, CancellationService>();
 
             // For the HttpClientFactory demos
             // serviceCollection.AddScoped<IIntegrationService, HttpClientFactoryInstanceManagementService>();
