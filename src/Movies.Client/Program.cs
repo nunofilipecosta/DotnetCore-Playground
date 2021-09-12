@@ -55,6 +55,8 @@ namespace Movies.Client
             // add loggers           
             serviceCollection.AddLogging(configure => configure.AddDebug().AddConsole());
 
+            serviceCollection.AddHttpClient();
+
             // register the integration service on our container with a 
             // scoped lifetime
 
@@ -68,10 +70,10 @@ namespace Movies.Client
             //serviceCollection.AddScoped<IIntegrationService, StreamService>();
 
             // For the cancellation demos
-            serviceCollection.AddScoped<IIntegrationService, CancellationService>();
+            //serviceCollection.AddScoped<IIntegrationService, CancellationService>();
 
             // For the HttpClientFactory demos
-            // serviceCollection.AddScoped<IIntegrationService, HttpClientFactoryInstanceManagementService>();
+             serviceCollection.AddScoped<IIntegrationService, HttpClientFactoryInstanceManagementService>();
 
             // For the dealing with errors and faults demos
             // serviceCollection.AddScoped<IIntegrationService, DealingWithErrorsAndFaultsService>();
