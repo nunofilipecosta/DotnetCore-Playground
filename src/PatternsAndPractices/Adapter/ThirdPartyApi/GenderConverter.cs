@@ -8,11 +8,18 @@ namespace PatternsAndPractices.Adapter.ThirdPartyApi
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
             Gender gender = (Gender)value;
-            writer.WriteValue(gender.ToString());
+
+            if (writer != null)
+                writer.WriteValue(gender.ToString());
         }
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
+            if (reader == null)
+            {
+                throw new ArgumentNullException(nameof(reader));
+            }
+
             var enumString = (string)reader.Value;
 
             if (enumString == "n/a") return Gender.NotApplicable;

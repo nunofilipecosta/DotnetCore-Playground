@@ -10,7 +10,7 @@ namespace PatternsAndPractices.Adapter
         public override async Task<List<Person>> GetPeople()
         {
             string filePath = @"Adapter/People.json";
-            return JsonConvert.DeserializeObject<List<Person>>(await File.ReadAllTextAsync(filePath));
+            return JsonConvert.DeserializeObject<List<Person>>(await File.ReadAllTextAsync(filePath).ConfigureAwait(false));
         }
     }
 }

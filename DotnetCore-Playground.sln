@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29709.97
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomRouting.Web", "src\CustomRouting.Web\CustomRouting.Web.csproj", "{5B7471C0-0CCB-4047-9FA9-5BB4537C2D5D}"
 EndProject
@@ -54,6 +54,16 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Client", "src\Movies.Client\Movies.Client.csproj", "{EDE885C9-3C29-448B-872E-BCCDD0CD9471}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7060EACC-85E8-48A2-9E6E-D52CF1742E61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Collections", "Collections", "{BB562DD6-887B-4D98-B1AA-D78494237E50}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CostaSoftware.Tutorial.Collections", "src\CostaSoftware.Tutorial.Collections\CostaSoftware.Tutorial.Collections.csproj", "{D51D2085-931E-451E-902C-03A454751283}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Localization", "Localization", "{CEF0A9C9-85A8-4842-81FA-358D42594708}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CostaSoftware.AspNetCoreLocalizationDemo", "src\Localization\CostaSoftware.AspNetCoreLocalizationDemo\CostaSoftware.AspNetCoreLocalizationDemo.csproj", "{F782596A-7BBB-4F37-A402-FE52ECADBA85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostaSoftware.AspNetCoreDatabaseLocalizationDemo", "src\Localization\CostaSoftware.AspNetCoreDatabaseLocalizationDemo\CostaSoftware.AspNetCoreDatabaseLocalizationDemo.csproj", "{DB5DEB4A-6846-402A-9F8A-BE0E5FB8EE8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +139,18 @@ Global
 		{EDE885C9-3C29-448B-872E-BCCDD0CD9471}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDE885C9-3C29-448B-872E-BCCDD0CD9471}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDE885C9-3C29-448B-872E-BCCDD0CD9471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D51D2085-931E-451E-902C-03A454751283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51D2085-931E-451E-902C-03A454751283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51D2085-931E-451E-902C-03A454751283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51D2085-931E-451E-902C-03A454751283}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F782596A-7BBB-4F37-A402-FE52ECADBA85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F782596A-7BBB-4F37-A402-FE52ECADBA85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F782596A-7BBB-4F37-A402-FE52ECADBA85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F782596A-7BBB-4F37-A402-FE52ECADBA85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB5DEB4A-6846-402A-9F8A-BE0E5FB8EE8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB5DEB4A-6846-402A-9F8A-BE0E5FB8EE8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB5DEB4A-6846-402A-9F8A-BE0E5FB8EE8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB5DEB4A-6846-402A-9F8A-BE0E5FB8EE8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -151,6 +173,9 @@ Global
 		{0132D672-6FAB-4759-B82A-F10023DD0E3D} = {04517D67-AF67-4D2A-BE9A-57D876288EEA}
 		{15214245-F6E1-4E53-864F-12E9A33671EE} = {0132D672-6FAB-4759-B82A-F10023DD0E3D}
 		{EDE885C9-3C29-448B-872E-BCCDD0CD9471} = {0132D672-6FAB-4759-B82A-F10023DD0E3D}
+		{D51D2085-931E-451E-902C-03A454751283} = {BB562DD6-887B-4D98-B1AA-D78494237E50}
+		{F782596A-7BBB-4F37-A402-FE52ECADBA85} = {CEF0A9C9-85A8-4842-81FA-358D42594708}
+		{DB5DEB4A-6846-402A-9F8A-BE0E5FB8EE8F} = {CEF0A9C9-85A8-4842-81FA-358D42594708}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {377EBFFA-7790-405D-80F2-C60FED4475F9}

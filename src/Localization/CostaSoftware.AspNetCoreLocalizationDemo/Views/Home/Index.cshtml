@@ -1,0 +1,13 @@
+﻿@using CostaSoftware.AspNetCoreLocalizationDemo.Controllers
+@using Microsoft.Extensions.Localization
+
+@inject IStringLocalizer<HomeController> Localizer
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["PageTitle"]</h1>
+    <p>@Localizer["page.description"]</p>
+</div>

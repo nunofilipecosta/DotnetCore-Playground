@@ -1,0 +1,10 @@
+﻿@using CostaSoftware.AspNetCoreLocalizationDemo.Controllers
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IHtmlLocalizer<AboutController> HtmlLocalizer
+@inject IViewLocalizer ViewLocalizer
+
+<h1>@ViewData["PageTitle"]</h1>
+<p>@HtmlLocalizer["page.description"]</p>
+
+<p>@ViewLocalizer["view.breadcrumb.text"]</p>

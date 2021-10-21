@@ -1,20 +1,21 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 
 namespace PatternsAndPractices.Adapter.ThirdPartyApi
 {
-    public class ThirdPartyService
+    public static class ThirdPartyService
     {
-        public async System.Threading.Tasks.Task<List<PersonDTO>> ListCharactersAsync(int count)
+        public static async System.Threading.Tasks.Task<List<PersonDTO>> ListCharactersAsync(int count)
         {
             var people = new List<PersonDTO>();
 
             using (var client = new HttpClient())
             {
-                string url = "https://swapi.co/api/people";
-                string result = await client.GetStringAsync(url);
+                Uri url = new Uri("https://swapi.co/api/people");
+                string result = await client.GetStringAsync(url).ConfigureAwait(true);
                 people = JsonConvert.DeserializeObject<PersonDTOApiResult>(result).Results;
             }
 
