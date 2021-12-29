@@ -63,7 +63,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Localization", "Localizatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CostaSoftware.AspNetCoreLocalizationDemo", "src\Localization\CostaSoftware.AspNetCoreLocalizationDemo\CostaSoftware.AspNetCoreLocalizationDemo.csproj", "{F782596A-7BBB-4F37-A402-FE52ECADBA85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostaSoftware.AspNetCoreDatabaseLocalizationDemo", "src\Localization\CostaSoftware.AspNetCoreDatabaseLocalizationDemo\CostaSoftware.AspNetCoreDatabaseLocalizationDemo.csproj", "{DB5DEB4A-6846-402A-9F8A-BE0E5FB8EE8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CostaSoftware.AspNetCoreDatabaseLocalizationDemo", "src\Localization\CostaSoftware.AspNetCoreDatabaseLocalizationDemo\CostaSoftware.AspNetCoreDatabaseLocalizationDemo.csproj", "{DB5DEB4A-6846-402A-9F8A-BE0E5FB8EE8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HealthChecks", "HealthChecks", "{6166B406-666E-43FB-85F4-B1C158594DF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostaSoftware.HealthCheck", "src\CostaSoftware.HealthCheck\CostaSoftware.HealthCheck.csproj", "{99FB7538-8EFB-443A-AB92-1DBF558E62FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -151,6 +155,10 @@ Global
 		{DB5DEB4A-6846-402A-9F8A-BE0E5FB8EE8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB5DEB4A-6846-402A-9F8A-BE0E5FB8EE8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB5DEB4A-6846-402A-9F8A-BE0E5FB8EE8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99FB7538-8EFB-443A-AB92-1DBF558E62FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99FB7538-8EFB-443A-AB92-1DBF558E62FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99FB7538-8EFB-443A-AB92-1DBF558E62FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99FB7538-8EFB-443A-AB92-1DBF558E62FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -176,6 +184,7 @@ Global
 		{D51D2085-931E-451E-902C-03A454751283} = {BB562DD6-887B-4D98-B1AA-D78494237E50}
 		{F782596A-7BBB-4F37-A402-FE52ECADBA85} = {CEF0A9C9-85A8-4842-81FA-358D42594708}
 		{DB5DEB4A-6846-402A-9F8A-BE0E5FB8EE8F} = {CEF0A9C9-85A8-4842-81FA-358D42594708}
+		{99FB7538-8EFB-443A-AB92-1DBF558E62FB} = {6166B406-666E-43FB-85F4-B1C158594DF4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {377EBFFA-7790-405D-80F2-C60FED4475F9}
