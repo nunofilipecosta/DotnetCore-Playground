@@ -1,4 +1,5 @@
 using CostaSoftware.HealthCheck.Controllers;
+using CostaSoftware.HealthCheck.Models;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using System.Net.Mime;
@@ -12,7 +13,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHealthChecks()
-    .AddCheck<SampleHealthCheck>("Sample")
+    .AddCheck<SampleHealthCheck>("Sample", null, new List<string> { "READY", "LIVE" })
     .AddTypeActivatedCheck<SampleTypedHealthCheck>("SampleTyped", HealthStatus.Unhealthy, new List<string> { "READY" }, "param1", "param2");
 
 var app = builder.Build();
@@ -28,26 +29,9 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-var options = new HealthCheckOptions();
+app.MapHealthChecks("/ready", new ReadyHealthCheckOptions("CostaSoftwareApplication"));
 
-options.ResponseWriter = async (c, r) =>
-{
-    c.Response.ContentType = MediaTypeNames.Application.Json;
-
-    var result = System.Text.Json.JsonSerializer.Serialize(new
-    {
-        Description = "",
-        Status = r.Status.ToString(),
-        Errors = r.Entries.Select(e => new { key = e.Key, value = Enum.GetName(typeof(HealthStatus), e.Value.Status) })
-    });
-    await c.Response.WriteAsync(result);
-};
-
-
-
-app.MapHealthChecks("/status", options);
-
-app.MapHealthChecks("/ready", new HealthCheckOptions() { });
+app.MapHealthChecks("/live", new LiveHealthCheckOptions("CostaSoftwareApplication"));
 
 app.MapControllers();
 
