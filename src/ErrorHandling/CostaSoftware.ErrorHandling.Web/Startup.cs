@@ -68,6 +68,7 @@ namespace CostaSoftware.ErrorHandling.Web
 
             if (env.IsDevelopment())
             {
+                app.UseExceptionHandler(err => err.UseCustomErrors(env));
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "CostaSoftware.ErrorHandling.Web v2"));
