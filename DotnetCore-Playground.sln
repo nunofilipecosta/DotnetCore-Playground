@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.0.31717.71
+VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomRouting.Web", "src\CustomRouting.Web\CustomRouting.Web.csproj", "{5B7471C0-0CCB-4047-9FA9-5BB4537C2D5D}"
 EndProject
@@ -75,9 +75,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CostaSoftware.Logging.Web",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generics", "Generics", "{59579848-A801-4BAF-9C3B-C8B78A7FF769}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostaSoftware.Generics.Common", "src\Generics\CostaSoftware.Generics.Common\CostaSoftware.Generics.Common.csproj", "{F3BE55F6-E4A7-4F3E-9D68-23380A6823A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CostaSoftware.Generics.Common", "src\Generics\CostaSoftware.Generics.Common\CostaSoftware.Generics.Common.csproj", "{F3BE55F6-E4A7-4F3E-9D68-23380A6823A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostaSoftware.Generics.Common.UnitTests", "src\Generics\CostaSoftware.Generics.Common.UnitTests\CostaSoftware.Generics.Common.UnitTests.csproj", "{A52EB899-F4C7-40C4-B315-1ED3282370B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CostaSoftware.Generics.Common.UnitTests", "src\Generics\CostaSoftware.Generics.Common.UnitTests\CostaSoftware.Generics.Common.UnitTests.csproj", "{A52EB899-F4C7-40C4-B315-1ED3282370B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MinimalApi", "MinimalApi", "{C2083928-2DFC-4E9D-8A23-F02A1AEDD5A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostaSoftware.MinimalApi.Sample", "src\MinimalApi\CostaSoftware.MinimalApi.Sample\CostaSoftware.MinimalApi.Sample.csproj", "{F4B72FA5-6986-46E5-9F0C-C28905DDD551}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -181,6 +185,10 @@ Global
 		{A52EB899-F4C7-40C4-B315-1ED3282370B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A52EB899-F4C7-40C4-B315-1ED3282370B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A52EB899-F4C7-40C4-B315-1ED3282370B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4B72FA5-6986-46E5-9F0C-C28905DDD551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B72FA5-6986-46E5-9F0C-C28905DDD551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B72FA5-6986-46E5-9F0C-C28905DDD551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B72FA5-6986-46E5-9F0C-C28905DDD551}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -210,6 +218,7 @@ Global
 		{AA52CA5A-6AB1-4872-8122-3B83EF3C589C} = {B3BAB461-9617-4B9A-9057-D0C1B5031A33}
 		{F3BE55F6-E4A7-4F3E-9D68-23380A6823A2} = {59579848-A801-4BAF-9C3B-C8B78A7FF769}
 		{A52EB899-F4C7-40C4-B315-1ED3282370B1} = {59579848-A801-4BAF-9C3B-C8B78A7FF769}
+		{F4B72FA5-6986-46E5-9F0C-C28905DDD551} = {C2083928-2DFC-4E9D-8A23-F02A1AEDD5A2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {377EBFFA-7790-405D-80F2-C60FED4475F9}
